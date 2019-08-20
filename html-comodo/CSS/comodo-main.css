@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css?family=Rajdhani:600,700|Roboto:400,500,500i");
+
+body {
+  line-height: 24px;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  color: #777777; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 600; }
+.main_width{
+	max-width: 1200px;
+	margin: auto;
+}
+header{
+	background-color: rgb(48,26,113);
+	height: 100px;
+}
+.header_container {
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.main_nav{
+	display: flex;
+	justify-content: space-between;
+	
+
+}
+.nav_link{
+	margin-right: 20px;
+	margin-left: 20px;
+	text-decoration: none;
+	color: white;
+}
+.join_button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 150px;
+	height: 40px;
+	border-radius: 20px;
+	background: linear-gradient(90deg, #5ec9fd, #a9feb3);
+}
