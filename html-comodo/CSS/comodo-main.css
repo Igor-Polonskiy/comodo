@@ -112,16 +112,47 @@ font-weight: 700;
 }
 .about_us {
 	display: flex;
-	margin-top: 150px;
+	align-items: center;
+	position: relative;
+	display: flex;
+	margin-top: 120px;
 	
 }
 .about_us_description {
-	width: 100%;
-	height: 400px;
-	 background: linear-gradient(to right, linear-gradient(90deg, #271560, #402c8c, #271560) 90%, white 10%);
-	/*background: linear-gradient(90deg, #271560, #402c8c, #271560);*/
+	width: 1000px;
+	height: 450px;
+	/* background: linear-gradient(to right, green 50%, red 50%);*/
+	background: linear-gradient(90deg, #271560, #402c8c, #271560);
 }
 .about_us_img {
-	width: 100px;
-	height: 300px;
+	
+	height:370px;
+	width: 530px;
+	position: absolute;
+	right: 0;
+	background-position: 50% 50%;
+    background-size: cover;
+	background-image: url(../img/about_img.png); 
+}
+.about_us_description_txt {
+	width: 420px;
+	margin-left: 80px;
+	margin-top: 80px;
+	color: white;
+}
+.about_us_description_txt h1{
+	font-size: 35px;
+}
+.about_us_description_txt p{
+	line-height: 1.5em;
+	font-size: 14px;
+}
+.about_us_description_txt h4 {
+	margin-bottom:5px;
+}
+.line{
+	/*margin-top: -30px; */
+	width: 50px;
+	height: 1px;
+	background: linear-gradient(90deg, #5ec9fd, #a9feb3);
 }
