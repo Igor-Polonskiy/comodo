@@ -1,11 +1,14 @@
 @import url("https://fonts.googleapis.com/css?family=Rajdhani:600,700|Roboto:400,500,500i");
 
 body {
-  line-height: 24px;
+	margin: 0;
+	padding: 0;
+	font-family: "Roboto", sans-serif;
+ /* line-height: 24px;
   font-size: 14px;
-  font-family: "Roboto", sans-serif;
+  
   font-weight: 500;
-  color: #777777; }
+  color: #777777;*/ }
 
 h1,
 h2,
@@ -16,7 +19,7 @@ h6 {
   font-family: "Rajdhani", sans-serif;
   font-weight: 600; }
 .main_width{
-	max-width: 1200px;
+	max-width: 1100px;
 	margin: auto;
 }
 header{
@@ -30,6 +33,7 @@ header{
 	align-items: center;
 }
 .main_nav{
+	font-size: 14px;
 	display: flex;
 	justify-content: space-between;
 	
@@ -42,6 +46,7 @@ header{
 	color: white;
 }
 .join_button {
+	font-size: 14px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -49,4 +54,74 @@ header{
 	height: 40px;
 	border-radius: 20px;
 	background: linear-gradient(90deg, #5ec9fd, #a9feb3);
+}
+.for_all{
+	display: flex;
+	align-items: center;
+	height: 880px;
+	width: 100%;
+	background-position: 50% 50%;
+    background-size: cover;
+	background-image: url(../img/banner/home-banner.jpg); 
+}
+.for_all_container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 700px;
+	
+	
+}
+.for_all_img {
+	display: flex;
+	align-items: center;
+	width: 50%;
+	height: 100%;
+	/*background-position: 50% 50%;
+    background-size: contain;
+	background-image: url(../img/banner/home-left.png); */
+}
+.for_all_description {
+	margin-left: 80px;
+	width: 50%;
+	color: white;
+}
+.for_all_description h1{
+font-size: 60px;
+font-weight: 700;
+}
+.for_all_description p {
+	line-height: 1.5em;
+	font-weight: 500;
+}
+.btn_video_box{
+	display: flex;
+	margin-top: 40px;
+	margin-bottom: 100px;
+}
+.btn_video {
+	color: black;
+	margin-right: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 60px;
+	width: 60px;
+	border-radius: 50%;
+	background: linear-gradient(90deg, #5ec9fd, #a9feb3);
+}
+.about_us {
+	display: flex;
+	margin-top: 150px;
+	
+}
+.about_us_description {
+	width: 100%;
+	height: 400px;
+	 background: linear-gradient(to right, linear-gradient(90deg, #271560, #402c8c, #271560) 90%, white 10%);
+	/*background: linear-gradient(90deg, #271560, #402c8c, #271560);*/
+}
+.about_us_img {
+	width: 100px;
+	height: 300px;
 }
