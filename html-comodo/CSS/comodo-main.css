@@ -55,6 +55,7 @@ header{
 	border-radius: 20px;
 	background: linear-gradient(90deg, #5ec9fd, #a9feb3);
 }
+
 .join_button:hover {
 	transition: 0.5s;
 	background: linear-gradient(90deg, #a9feb3, #5ec9fd);
