@@ -19,7 +19,7 @@ h6 {
   font-family: "Rajdhani", sans-serif;
   font-weight: 600; }
 .main_width{
-	max-width: 1120px;
+	max-width: 1150px;
 	margin: auto;
 }
 header{
@@ -104,6 +104,7 @@ font-weight: 700;
 	margin-top: 40px;
 	margin-bottom: 100px;
 }
+
 .btn_video {
 	color: black;
 	margin-right: 50px;
@@ -114,6 +115,21 @@ font-weight: 700;
 	width: 60px;
 	border-radius: 50%;
 	background: linear-gradient(90deg, #5ec9fd, #a9feb3);
+
+	/*box-shadow: 0 0 0 1px rgb(28,208,255, 0.5); */  
+  	animation: shadow 2s linear infinite;           
+}
+@keyframes shadow {
+  from{
+      box-shadow: 0 0 0 0px rgba(28,208,255, 0.1),
+                }
+  /*50% {
+      box-shadow: 0 0 0 5px rgba(28,208,255, 0.1),
+              }*/
+ to{
+      box-shadow: 0 0 0 10px rgba(28,208,255, 0.5),
+              
+}
 }
 .about_us {
 	display: flex;
@@ -196,10 +212,10 @@ font-weight: 700;
 	justify-content: space-between;
 }
 .upcoming_games_img {
-	height: 338px;
+	height: 328px;
 	width: 22%;
 	background-position: 50% 50%;
-	background-size: cover;
+	background-size: 100%;
 	display: flex;
 	align-items: center;
 	
@@ -291,14 +307,28 @@ font-weight: 700;
 	margin-top: 100px;
 }
 .width-1{
-	width: 330px;
+	position: relative;
+	
+	margin: 0;
+}
+.img_g {
+	overflow: hidden;
 }
 .width-2{
-	width: 670px;
+	position: relative;
+	width: 750px;
+}
+.galary_eye{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	left: 0;
+	top: 0;
+	background-color: rgba(123, 123, 123, 0.5);
 }
 .grid-item {
 
-  margin-bottom: 20px;
+  margin-bottom: 26px;
 }
 .funny_spancer{
 	margin-top: 100px;

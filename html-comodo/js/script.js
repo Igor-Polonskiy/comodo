@@ -4,6 +4,6 @@ jQuery(function($){
 
 		itemSelector: '.grid-item',
 		columnWidth:'.width-1',
-		gutter: 60,
+		gutter: 26,
 	});
 });
