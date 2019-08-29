@@ -26,6 +26,12 @@ header{
 	background-color: rgb(48,26,113);
 	height: 100px;
 }
+.fixed{
+  position: fixed;
+  top:0;
+  left: 0;
+  z-index: 99;
+}
 .header_container {
 	height: 100%;
 	display: flex;
@@ -36,29 +42,41 @@ header{
 	font-size: 14px;
 	display: flex;
 	justify-content: space-between;
-	
-
+}
+/*подсвечиваем ссылку навигации на текущую страницу*/
+body#home a#homenav,
+body#about a#aboutnav,
+body#foods a#foodsnav,
+body#lifestyle a#lifestylenav,
+body#contact a#contactnav {
+	color: #5bc3f9;
 }
 .nav_link{
 	margin-right: 20px;
 	margin-left: 20px;
 	text-decoration: none;
 	color: white;
+	transition: 0.5s;
+}
+.nav_link:hover {
+	color: #5bc3f9;
+	transition: 0.5s;
 }
 .join_button {
 	font-size: 14px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	width: 150px;
 	height: 40px;
 	border-radius: 20px;
-	background: linear-gradient(90deg, #5ec9fd, #a9feb3);
 }
-
-.join_button:hover {
-	transition: 0.5s;
-	background: linear-gradient(90deg, #a9feb3, #5ec9fd);
+.btn_slide{
+	background-image: linear-gradient(90deg, #5ec9fd, #a9feb3, #5ec9fd);
+	background-size: 200%;
+	background-position: left;
+	transition:0.5s ;
+}
+.btn_slide:hover {
+	transition:0.5s ;
+	background-position: right;
 }
 .for_all{
 	display: flex;
@@ -108,28 +126,21 @@ font-weight: 700;
 .btn_video {
 	color: black;
 	margin-right: 50px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	height: 60px;
 	width: 60px;
 	border-radius: 50%;
 	background: linear-gradient(90deg, #5ec9fd, #a9feb3);
-
-	/*box-shadow: 0 0 0 1px rgb(28,208,255, 0.5); */  
+	/*box-shadow: 0 0 0 10px rgba(28,208,0, 1);
+	box-shadow: 0 0 0 1px rgb(28,208,255, 0.5); */  
   	animation: shadow 2s linear infinite;           
 }
 @keyframes shadow {
   from{
-      box-shadow: 0 0 0 0px rgba(28,208,255, 0.1),
+      box-shadow: 0 0 0 0px rgba(28,208,255, 0.5)
                 }
-  /*50% {
-      box-shadow: 0 0 0 5px rgba(28,208,255, 0.1),
-              }*/
- to{
-      box-shadow: 0 0 0 10px rgba(28,208,255, 0.5),
-              
-}
+   to{
+      box-shadow: 0 0 0 15px rgba(28,208,255, 0.1)          
+	}
 }
 .about_us {
 	display: flex;
@@ -137,8 +148,7 @@ font-weight: 700;
 	position: relative;
 	display: flex;
 	margin-top: 120px;
-	
-}
+	}
 .about_us_description {
 	width: 1000px;
 	height: 450px;
@@ -146,7 +156,6 @@ font-weight: 700;
 	background: linear-gradient(90deg, #271560, #402c8c, #271560);
 }
 .about_us_img {
-	
 	height:370px;
 	width: 530px;
 	position: absolute;
@@ -187,7 +196,6 @@ font-weight: 700;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background: linear-gradient(90deg, #5ec9fd, #a9feb3);
 }
 .upcoming_games{
 	margin-top: 50px;
@@ -213,7 +221,7 @@ font-weight: 700;
 }
 .upcoming_games_img {
 	height: 328px;
-	width: 22%;
+	width: 246px;
 	background-position: 50% 50%;
 	background-size: 100%;
 	display: flex;
@@ -283,6 +291,12 @@ font-weight: 700;
 	border: 2px solid transparent;
 	border-image:  linear-gradient(90deg, #5ec9fd, #a9feb3);
 	border-image-slice: 1; 
+	transition: 0.5s;
+}
+.live_streaming_btn:hover {
+	background: linear-gradient(90deg, #5ec9fd, #a9feb3);
+	color: black;
+	transition: 0.5s;
 }
 .live_streaming_content {
 	
@@ -308,15 +322,12 @@ font-weight: 700;
 }
 .width-1{
 	position: relative;
-	
-	margin: 0;
 }
 .img_g {
 	overflow: hidden;
 }
 .width-2{
 	position: relative;
-	width: 750px;
 }
 .galary_eye{
 	position: absolute;
@@ -324,12 +335,24 @@ font-weight: 700;
 	width: 100%;
 	left: 0;
 	top: 0;
-	background-color: rgba(123, 123, 123, 0.5);
+	background-color: rgba(48,26,113, 0);
+}
+.galary_eye:hover {
+	transition: 0.5s;
+	background-color: rgba(48,26,113, 0.8);
 }
 .grid-item {
-
   margin-bottom: 26px;
 }
+.eye_icon {
+	display: none;
+	color: white;
+}
+.galary_eye:hover .eye_icon{
+	display: flex;
+	
+} 
+
 .funny_spancer{
 	margin-top: 100px;
 	height: 500px;
@@ -544,7 +567,7 @@ width: 70%;
 	width: 200px;
 	border-radius: 25px;
 	height:50px;
-	background: linear-gradient(90deg, #5ec9fd, #a9feb3);
+	
 }
 footer {
 background: linear-gradient(90deg, #271560, #402c8c, #271560);
