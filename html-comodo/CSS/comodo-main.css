@@ -483,10 +483,11 @@ width: 70%;
 }
 .block_post_img {
 	height: 200px;
-	width: 100%
+	width: 100%;
+	transition: 0.3s;
+	background-size: 100% auto;
 	background-position: 50% 50%;
-	background-size: cover;
-	
+	background-repeat: no-repeat;
 }
 .post_img1 {
 	background-image: url(../img/blog_img1.png);
@@ -508,6 +509,22 @@ width: 70%;
 	height: 250px;
 	width: 100%;
 	color: white;
+	transition: 0.3s;
+}
+.block_post:hover .block_post_img{
+	transition: 0.3s;
+	
+	background-size: 110% auto;
+}
+.block_post:hover .block_post_txt {
+	transition: 0.3s;
+	background-color: #271560;
+	}
+.block_post:hover .block_post_txt h3{
+	transition: 0.3s;
+	background: linear-gradient(90deg, #5ec9fd, #a9feb3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .block_post_icons {
 	display: flex;
