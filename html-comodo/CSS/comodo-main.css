@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Rajdhani:600,700|Roboto:400,500,500i");
-
+img {
+	margin: 0;
+	padding: 0;
+}
 body {
 	margin: 0;
 	padding: 0;
@@ -25,8 +28,10 @@ h6 {
 header{
 	background-color: rgb(48,26,113);
 	height: 100px;
+	width: 100%;
 }
 .fixed{
+
 	height: 70px;
 	position: fixed;
    left:0;
@@ -151,7 +156,7 @@ font-weight: 700;
       box-shadow: 0 0 0 0px rgba(28,208,255, 0.5)
                 }
    to{
-      box-shadow: 0 0 0 15px rgba(28,208,255, 0.1)          
+      box-shadow: 0 0 0 15px rgba(28,208,255, 0)          
 	}
 }
 .about_us {
@@ -525,12 +530,12 @@ width: 70%;
 	height: 250px;
 	width: 100%;
 	color: white;
-	transition: 0.3s;
+	transition: 0.2s;
 }
 .block_post:hover .block_post_img{
-	transition: 0.3s;
+	transition: 0.2s;
 	
-	background-size: 110% auto;
+	background-size: 120% auto;
 }
 .block_post:hover .block_post_txt {
 	transition: 0.3s;
