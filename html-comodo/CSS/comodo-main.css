@@ -480,7 +480,10 @@ width: 70%;
 	 background-image: linear-gradient(90deg, #5ec9fd, #a9feb3), radial-gradient(circle at top left, #5ec9fd,#a9feb3);
 	color: black;
 }
-
+.order_active {
+	background-image: linear-gradient(90deg, #5ec9fd, #a9feb3), radial-gradient(circle at top left, #5ec9fd,#a9feb3);
+	color: black;
+}
 .frequently_questions {
 	margin-top: 100px;
 }

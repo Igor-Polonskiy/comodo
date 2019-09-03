@@ -45,22 +45,22 @@ $(function() {
     });
 $(function() {
        $('.order_1').on('click', function() {
-          $(".order_1").addClass("btn_active");
-          $(".order_2").removeClass("btn_active");
-          $(".order_3").removeClass("btn_active");
+          $(".order_1").addClass("order_active");
+          $(".order_2").removeClass("order_active");
+          $(".order_3").removeClass("order_active");
         });
     });
 $(function() {
        $('.order_2').on('click', function() {
-          $(".order_2").addClass("btn_active");
-          $(".order_1").removeClass("btn_active");
-          $(".order_3").removeClass("btn_active");
+          $(".order_2").addClass("order_active");
+          $(".order_1").removeClass("order_active");
+          $(".order_3").removeClass("order_active");
         });
     })
 $(function() {
        $('.order_3').on('click', function() {
-          $(".order_3").addClass("btn_active");
-          $(".order_2").removeClass("btn_active");
-          $(".order_1").removeClass("btn_active");
+          $(".order_3").addClass("order_active");
+          $(".order_2").removeClass("order_active");
+          $(".order_1").removeClass("order_active");
         });
     })
