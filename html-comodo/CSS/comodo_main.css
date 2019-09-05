@@ -63,8 +63,9 @@ header{
 /*подсвечиваем ссылку навигации на текущую страницу*/
 body#home a#homenav,
 body#about a#aboutnav,
-body#foods a#foodsnav,
-body#lifestyle a#lifestylenav,
+body#gallery a#gallerynav,
+body#pages a#pagesnav,
+body#blog a#blognav,
 body#contact a#contactnav {
 	color: #5bc3f9;
 }
