@@ -88,8 +88,13 @@ body#contact a#contactnav {
 }
 .pages_container:hover .subnav{
 	display: block;
+	animation: fadein  0.5s forwards linear;
 }
+
 .subnav { 
+	animation: fadein reverse 0.5s linear;
+	transition: 3s;
+	opacity: 0;
 	display: none;
 	position: absolute;
 	left: 20px;
@@ -97,6 +102,16 @@ body#contact a#contactnav {
 	width: 200px;
 	background-color: white;
 	box-shadow:0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+@keyframes fadein {
+	from{opacity: 0;
+		transform: translateY(50px);
+
+	}
+	to{opacity: 1;
+
+		transform: none;
+	}
 }
 .remove{
 	top: 60px;
@@ -118,7 +133,12 @@ hr {
 	text-decoration: none;
 	color: black;
 }
+.subnav_link:hover a{
+	color: white;
+}
 .subnav_link:hover {
+	color: white;
+	background-size: 200%;
 	background-image: linear-gradient(90deg, #5ec9fd, #a9feb3);
 }
 .join_button {
