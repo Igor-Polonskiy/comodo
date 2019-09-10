@@ -7,8 +7,10 @@ $(window).scroll(function(){
   var docscroll=$(document).scrollTop();
   if(docscroll>$('header').height()){
   	$('header').addClass('fixed');
+    $('.subnav').addClass('remove');
   }else{
     $('header').removeClass('fixed');
+    $('.subnav').removeClass('remove');
     
 
   }
