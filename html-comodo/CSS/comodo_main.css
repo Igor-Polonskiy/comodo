@@ -88,11 +88,11 @@ body#contact a#contactnav {
 }
 .pages_container:hover .subnav{
 	display: block;
-	animation: fadein  0.5s forwards linear;
+	animation: fadein  0.3s forwards linear;
 }
 
 .subnav { 
-	animation: fadein reverse 0.5s linear;
+	animation: fadein reverse 0.3s linear;
 	transition: 3s;
 	opacity: 0;
 	display: none;
@@ -105,7 +105,7 @@ body#contact a#contactnav {
 }
 @keyframes fadein {
 	from{opacity: 0;
-		transform: translateY(50px);
+		transform: translateY(30px);
 
 	}
 	to{opacity: 1;

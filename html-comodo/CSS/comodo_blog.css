@@ -1,0 +1,152 @@
+.social_life {
+	display: flex;
+	justify-content: space-between;
+
+}
+.social_img {
+	margin-top: 100px;
+	padding: 20px;
+	width: 28%;
+	height: 160px;
+	background-size: cover;
+	background-position: 50% 50%;
+}
+.social_img:hover .social_dark{
+	transition: 0.5s;
+	background-color: rgba(93,201,254, 0.8);
+}
+.social_dark{
+	color: white;
+	transition: 0.5s;
+	height:100%;
+	width: 100%;
+	background-color: rgba(0,0,0,0.7);
+}
+.social_dark a{
+	text-align: center;
+	color: white;
+	text-decoration: none;
+}
+.social_img_1 {
+	
+	background-image: url(../img/blog/cat-post/cat-post-3.jpg);
+}
+.social_img_2 {
+	
+	background-image: url(../img/blog/cat-post/cat-post-2.jpg);
+}
+.social_img_3 {
+	
+	background-image: url(../img/blog/cat-post/cat-post-1.jpg);
+}
+.main_content {
+	margin-top: 150px;
+	display: flex;
+	justify-content: space-between;
+	width: 70%
+}
+.blog_post {
+	margin-bottom: 50px;
+	display: flex;
+	justify-content: space-between;
+}
+.metrick {
+	font-size: 14px;
+	width:130px;
+	margin-left:30px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+.metrick p{
+	text-align: right;
+}
+.metrick a{
+	text-decoration: none;
+	color: gray;
+}
+.metrick a:hover {
+	color: #5ec9fd;
+}
+.metrick i{
+	margin-left: 10px;
+}
+.metrick_item {
+	margin-bottom: 20px;
+}
+.blue {
+	color:  #5ec9fd;
+}
+.post {
+	margin-left: 15px;
+	width: 580px;
+}
+.post p {
+	color: gray;
+	line-height: 1.5em;
+}
+.post a{
+	color: black;
+	text-decoration: none;
+}
+.post a:hover {
+	transition: 0.3s;
+	color: #5ec9fd;
+}
+
+.blog_img {
+
+	height: 300px;
+	width: 580px;
+	background-size: cover;
+	background-position: 50% 50%;
+}
+.blog_img_1 {
+	background-image: url(../img/blog/main-blog/m-blog-1.jpg);
+}
+.blog_img_2 {
+	background-image: url(../img/blog/main-blog/m-blog-2.jpg);
+}
+.blog_img_3 {
+	background-image: url(../img/blog/main-blog/m-blog-3.jpg);
+}
+.blog_img_4 {
+	background-image: url(../img/blog/main-blog/m-blog-4.jpg);
+}
+.blog_img_5 {
+	background-image: url(../img/blog/main-blog/m-blog-5.jpg);
+}
+.view_more {
+	font-size: 14px;
+	font-weight: 500;
+	height: 35px;
+	width: 130px;
+	transition: 0.3s;
+}
+.pagination {
+	color: gray;
+	margin: auto;
+	display: flex;
+	justify-content: center;
+	/*width: 300px;*/
+}
+.pagination_item{
+	width: 40px;
+	height: 40px;
+	background-color: white;
+
+}
+.pagination_item_2 {
+	color: white;
+	background-color: #5ec9fd;
+}
+.pagination_item:hover {
+	transition: 0.3s;
+	color: white;
+	background-color: #5ec9fd;
+}
+.view_more:hover {
+	transition: 0.3s;
+	color: white;
+	background-color:  #5ec9fd;
+}
