@@ -41,6 +41,7 @@
 }
 .main_content {
 	margin-top: 150px;
+	margin-bottom: 200px;
 	display: flex;
 	justify-content: space-between;
 	
@@ -151,11 +152,13 @@
 	background-color:  #5ec9fd;
 }
 .aside {
+
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	border: 1px solid lightgray;
 	width: 350px;
+	height: 100%;
 
 }
 .form_serch {
@@ -288,4 +291,68 @@ hr {
 color: 	#5ec9fd;
 border-color: #5ec9fd;
 transition: 0.3s;
+}
+.newsletter {
+	margin-top: 25px;
+	margin-bottom: 25px;
+	width: 80%;
+}
+.newsletter p{
+	text-align: center;
+	color: gray;
+	font-size: 14px;
+	line-height: 1.5em;
+}
+.subscribe_form {
+	height: 40px;
+	width: 100%;
+	border:1px solid lightgray;
+	display: flex;
+}
+.email_icon {
+	width: 50px;
+}
+.subscribe_field {
+	width: 130px;
+	border: none;
+}
+.subscribe_field::placeholder {
+	color: lightgray;
+}
+.subscribe_batone {
+	background-color: #5ec9fd;
+	color: white;
+	font-size: 14px;
+	width: 120px;
+}
+.tag_clouds {
+	margin-top: 25px;
+	margin-bottom: 25px;
+	width: 80%;
+}
+.tags{
+	display: flex;
+	flex-wrap: wrap;
+}
+.tags a{
+	transition: 0.3s;
+	text-decoration: none;
+	color: black;
+}
+.tag {
+	transition: 0.3s;
+	font-size: 12px;
+	height: 20px;
+	border: 1px solid lightgray;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-bottom: 10px;
+	margin-right: 5px;
+}
+.tag:hover,
+ .tag:hover .tags a{
+ 	transition: 0.3s;
+ 	color: white;
+ 	background-color: #5ec9fd;
+
 }
