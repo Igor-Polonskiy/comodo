@@ -427,6 +427,16 @@ font-weight: 700;
 .width-2{
 	position: relative;
 }
+.galery {
+	display: flex;
+	justify-content: space-between;
+}
+.gallery_left {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 750px;
+}
 .galary_eye{
 	position: absolute;
 	height: 100%;
