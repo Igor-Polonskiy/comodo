@@ -430,6 +430,7 @@ font-weight: 700;
 .galery {
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
 }
 .gallery_left {
 	display: flex;
@@ -699,6 +700,7 @@ footer {
 background: linear-gradient(90deg, #271560, #402c8c, #271560);
 }
 .footer_container_links {
+	padding-top: 60px;
 	display: flex;
 	border-bottom: 1px solid gray;
 }
@@ -709,7 +711,6 @@ background: linear-gradient(90deg, #271560, #402c8c, #271560);
 	margin-bottom: 40px;
 }
 .column_link h3 {
-	margin-top: 120px;
 	margin-bottom: 40px;
 	color: white;
 }
@@ -731,9 +732,13 @@ background: linear-gradient(90deg, #271560, #402c8c, #271560);
 	height: 100px;
 	color: white;
 }
+.footer_container_copyrite_txt{
+	font-size: 14px;
+}
 .footer_container_copyrite_txt a{
 	text-decoration: none;
 	color:#5ec9fd;
+	width: 50%;
 }
 .footer_icons {
 	display: flex;
@@ -754,3 +759,333 @@ background: linear-gradient(90deg, #271560, #402c8c, #271560);
 	background-color: #5ec9fd;
 	transition: 0.3s;
 }
+
+@media(max-width: 1200px) and ( min-width: 993px) {
+	.main_width{
+	max-width: 960px;
+	}
+	.for_all_container {
+		height: 500px;
+	}
+	.for_all_img img{
+		height: 400px;
+	}
+	.for_all_description {
+		margin-left: 80px;
+		width: 50%;
+		color: white;
+	}
+	.for_all_description h1{
+		font-size: 35px;
+		font-weight: 700;
+	}
+	
+	.about_us_description {
+		width: 800px;
+		height: 500px;
+	}
+	.about_us_img {
+		height:310px;
+		width: 450px;
+	}
+	.about_us_description_txt {
+		width: 350px;
+		margin-left: 80px;
+		margin-top: 80px;
+		color: white;
+	}
+	.upcoming_games_img {
+		height: 280px;
+		width: 210px;
+	}
+	.live_streaming_content_txt h1{
+		font-size: 28px;
+	}
+	.width-1 img{
+		width: 290px;
+	}
+	.width-2 img{
+		width:  610px;
+	}
+	.gallery_left {
+		width: 610px;
+	}
+}
+@media(max-width: 992px) {
+	.main_width{
+	max-width: 720px;
+	}
+	.for_all{
+		height: 500px;
+	}
+	.for_all_container {
+		height: 400px;
+	}
+	.for_all_img {
+		display: none;
+	}
+	.for_all_description {
+		width: 720px;
+	}
+	.for_all_description h1{
+		font-size: 35px;
+		font-weight: 700;
+	}
+	
+	.about_us_img {
+		display: none;
+	}
+	.about_us_description_txt {
+		width: 600px;
+	}
+	.upcoming_games_imgs {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	}
+	.upcoming_games_img{
+		margin-bottom: 30px;
+	}
+	.live_streaming_content_img {
+		display: none;
+	}
+	.live_streaming_content_txt {
+		width: 750px;
+	}
+	.galary_right {
+		display: none;
+	}
+	.width-1 img{
+		width: 330px;
+	}
+	.width-2 img{
+		width:  690px;
+	}
+	.gallery_left {
+		width: 690px;
+	}
+	.pacage_platinum {
+		display: none;
+	}
+	.pacage {
+		width: 47%;
+	}
+	.question {
+		margin-bottom: 40px;
+		border: none;
+	}
+	.block_post_hide {
+		display: none;
+	}
+	.block_post {
+		width: 47%;
+	}
+	.subscribe_txt h1{
+		font-size: 30px;
+	}
+	.subscribe_btn {
+		font-size: 12px;
+		width: 100px;
+	}
+	.footer_container_links {
+		flex-wrap: wrap;
+	}
+	.column_link {
+		width: 50%;
+	}
+	.footer_icons {
+		width: 50%;
+		padding-left: 280px;
+	}
+}
+@media(max-width: 767px){
+	.main_width{
+	max-width: 540px;
+	}
+	.for_all_description {
+		
+		max-width: 500px;
+	}
+	.about_us_description {
+		width: 540px;
+	}
+	.about_us_description_txt {
+		width: 450px;
+		margin: auto;
+	}
+	.upcoming_games_img {
+		height: 280px;
+		width: 210px;
+	}
+	.live_streaming_btns {
+		font-size: 12px;
+	}
+	.galary_right {
+		display: block;
+	}
+	.width-1 img{
+		width: 240px;
+	}
+	.width-2 img{
+		width:  510px;
+	}
+	.gallery_left {
+		width: 510px;
+	}
+	.galary_right img{
+		width: 510px;
+	}
+	.funny_spancer_content {
+		font-size: 16px;
+		width: 510px;
+	}
+	.pacages {
+		flex-direction: column;
+	}
+	.pacage_platinum {
+		display: flex;
+	}
+	.pacage {
+		width:100%;
+		margin-bottom: 20px;
+	}
+	.frequently_questions_block {
+		flex-direction: column;
+	}
+	.question {
+		width: 510px;
+		margin: 0;
+		padding: 0;
+	}
+	.block_posts_container {
+		flex-direction: column;
+	}
+	.block_post {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	.block_post_hide {
+		display: block;
+	}
+	.block_post_img {
+		width: 100%;
+		height: auto;
+	}
+	.block_post_img img{
+		height: 100%;
+		width: 100%;
+	}
+	.subscribe {
+		height: 270px;
+	}
+	.subscribe_container {
+		flex-direction: column;
+	}
+	.subscribe_txt,
+	.form {
+		width: 100%;
+	}
+	.subscribe_txt{
+		text-align: center;
+	}
+	.subscribe_txt p{
+		color: gray;
+	}
+	.form {
+		display: flex;
+		height: 50px;
+		position: relative;
+	}
+	.subscribe_btn {
+			width: 200px;
+	}
+	.footer_container_copyrite {
+		margin-top: 20px;
+		padding-bottom: 20px;
+		flex-direction: column;
+	}
+	.footer_icons {
+		width: 150px;
+		padding: 0;
+	}
+}
+@media(max-width: 576px){
+	.main_width{
+		max-width: 100%;
+	}
+	.about_us_description {
+		width: 100%;
+	}
+	.about_us_description_txt {
+		width: 90%;
+		margin: auto;
+	}
+	.upcoming_games_img {
+		height: 328px;
+		width: 246px;
+	}
+	.live_streaming {
+		height: 900px;
+	}
+	.live_streaming_container {
+		width: 90%;
+		margin: auto;
+	}
+	.live_streaming_btns {
+		flex-wrap: wrap;
+		justify-content: space-around;
+		height: 
+	}
+	.live_streaming_btn {
+		width: 47%;
+		margin-bottom: 20px;
+		height: 30px;
+	}
+	.gallery_left {
+		flex-direction: column;
+		align-items: center;
+	}
+	.width-1 {
+		margin: auto;
+		width: 100%;
+	}
+	.width-1 img{
+		width: 100%;
+		
+	}
+	.width-2 img{
+		width: 100%;
+		margin: auto;
+	}
+	.gallery_left {
+		width: 90%;
+		margin: auto;
+	}
+	.galary_right {
+		width: 90%;
+		margin: auto;
+	}
+	.question {
+		width: 90%;
+		margin: auto;
+	}
+	.subscribe_container {
+		width: 90%;
+		margin: auto;
+	}
+	.subscribe_btn {
+		font-size: 12px;
+		width: 100px;
+	}
+	.footer_container {
+		width: 90%;
+		margin: auto;
+		
+	}
+	.footer_container_links {
+		flex-direction: column;
+	}
+	.footer_container_copyrite{
+		text-align: center;
+	}
+}	

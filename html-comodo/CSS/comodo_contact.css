@@ -6,12 +6,21 @@
 	display: flex;
 	justify-content: space-between;
 	margin-bottom: 150px;
+	flex-wrap: wrap;
 }
 .contact_info{
 width: 25%;
+min-width: 210px;
+}
+.enter_fields_container {
+	width: 70%;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+
 }
 .enter_fields{
-	width: 35%
+	width: 45%
 }
 .contacts_contact {
 	display: flex;
@@ -32,7 +41,8 @@ margin: 0;
 	color: gray;
 }
 input, textarea {
-	width: 390px;
+	box-sizing: border-box;
+	width: 100%;
 	padding-left: 20px;
 }
 input {
@@ -49,4 +59,31 @@ textarea {
 	width: 200px;
 	height: 50px;
 	float: right;
+}
+@media(max-width: 992px){
+	.contacts {
+	flex-direction: column;
+	
+	}
+	.enter_fields_container {
+	width: 100%;
+}
+@media(max-width: 767px){
+	.enter_fields_container {
+		flex-direction: column;
+	}
+	.enter_fields{
+	width: 100%
+	}
+}
+@media(max-width: 576px){
+	.map,
+	.contacts {
+		width: 90%;
+		margin: auto;
+	}
+	.contacts{
+		margin-bottom: 100px;
+		margin-top: 100px;
+	}
 }
