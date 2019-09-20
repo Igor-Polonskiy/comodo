@@ -308,6 +308,7 @@ transition: 0.3s;
 	width: 100%;
 	border:1px solid lightgray;
 	display: flex;
+	justify-content: space-between;
 }
 .email_icon {
 	width: 50px;
@@ -356,8 +357,12 @@ transition: 0.3s;
  	background-color: #5ec9fd;
 
 }
+.main_content {
+	display: flex; 
+	justify-content: space-between;
+}
 .post_content {
-	margin-right: 100px;
+	width:750px;
 }
 .paragraf {
 	font-style: italic;
@@ -538,4 +543,116 @@ textarea[name=" masage"]{
 	font-size: 14px;
 	width: 150px;
 	height: 50px;
+}
+@media(max-width: 1200px) and (min-width: 993px) {
+	.social_img {
+		
+		padding: 20px;
+		width: 28%;
+		height: 130px;
+		background-size: cover;
+		background-position: 50% 50%;
+	}
+	.post {
+		
+		width: 450px;
+	}
+	.blog_img {
+		height: 230px;
+		width: 450px;
+	}
+	.aside {
+		width: 300px;
+	}
+	.main_img img{
+		width: 630px;
+	}
+	.post_content {
+		width:630px;
+	}
+	.second_imgs img{
+		width: 47%;
+	}
+}
+@media(max-width: 992px){
+	.social_life {
+		flex-direction: column;
+		align-items: center;
+		margin-top: 100px;
+	}
+	.social_img {
+		width: 350px;
+		margin-top: 20px;
+	}
+	.main_content {
+		 flex-direction: column;
+		justify-content: space-between;
+	
+	}
+	.aside {
+		margin-top: 30px;
+		width: 100%;
+	}
+	.subscribe_field {
+		width: 350px;
+	}
+
+	.blog_img {
+		height: 300px;
+		width: 510px;
+	}
+}
+@media(max-width: 767px){
+	.blog_post {
+		flex-direction: column;
+	}
+	.metrick {
+		align-items: flex-start;
+		width: 100%;
+		
+	}
+	.post {
+		
+		width: 450px;
+	}
+	.blog_img {
+		height: 300px;
+		width: 510px;
+	}
+	.main_img img{
+		width: 540px;
+	}
+	.post_content {
+		width:540px;
+	}
+	
+}
+@media(max-width: 576px){
+	.blogs {
+		width: 90%;
+		margin: auto;
+	}	
+	.blog_post {
+		margin: 0;
+	}
+	.post{
+		margin: 0;
+		width: 100%
+	}
+	.blog_img {
+		margin: 0;
+		width: 100%;
+		height: all;
+	}
+
+	.main_img img{
+		width: 100%;
+	}
+	.post_content {
+		width:90%;
+		margin: auto;
+	}
+	.second_imgs img{
+		width: 47%;
+	}
 }
