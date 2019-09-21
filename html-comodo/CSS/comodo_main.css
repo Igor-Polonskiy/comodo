@@ -132,6 +132,7 @@ hr {
 .subnav_link a{
 	text-decoration: none;
 	color: black;
+
 }
 .subnav_link:hover a{
 	color: white;
@@ -140,6 +141,14 @@ hr {
 	color: white;
 	background-size: 200%;
 	background-image: linear-gradient(90deg, #5ec9fd, #a9feb3);
+}
+.nav_hide_btn {
+	display: none;
+	color: white;
+	font-size: 25px;
+	border: none;
+	background: black;
+
 }
 .join_button {
 	font-size: 14px;
@@ -439,12 +448,16 @@ font-weight: 700;
 	width: 750px;
 }
 .galary_eye{
+	font-size: 40px;
 	position: absolute;
 	height: 100%;
 	width: 100%;
 	left: 0;
 	top: 0;
 	background-color: rgba(48,26,113, 0);
+}
+.galary_eye a {
+	text-decoration: none;
 }
 .galary_eye:hover {
 	transition: 0.5s;
@@ -815,6 +828,19 @@ background: linear-gradient(90deg, #271560, #402c8c, #271560);
 	.main_width{
 	max-width: 720px;
 	}
+	.join_button{
+		display: none;
+	}
+	.main_nav {
+		display: none;
+	}
+	.nav_hide_btn {
+		display: block;
+	}
+	header{
+		background: black;
+		height: 70px;
+	}
 	.for_all{
 		height: 500px;
 	}
@@ -1012,6 +1038,14 @@ background: linear-gradient(90deg, #271560, #402c8c, #271560);
 @media(max-width: 576px){
 	.main_width{
 		max-width: 100%;
+	}
+	.header_container{
+		width: 90%;
+		margin: auto;
+	}
+	.for_all_description {
+		width: 90%;
+		margin: auto;
 	}
 	.about_us_description {
 		width: 100%;
