@@ -1,16 +1,20 @@
 jQuery(function($){
 
-
+$('.nav_hide_btn').click(function(){
+  $(".main_nav_black_container").slideToggle(300);
+});  
 	
 });
 $(window).scroll(function(){
   var docscroll=$(document).scrollTop();
-  if(docscroll>$('header').height()){
+  if(docscroll>$('.header_container').height()){
   	$('header').addClass('fixed');
+    $('.header_container').height(70);
     $('.subnav').addClass('remove');
   }else{
     $('header').removeClass('fixed');
     $('.subnav').removeClass('remove');
+    $('.header_container').height(100);
     
 
   }

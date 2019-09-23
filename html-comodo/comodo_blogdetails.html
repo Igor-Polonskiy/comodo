@@ -31,11 +31,11 @@
 
 </head>
 <body id="blog">
-  <header >
-    <div class="header_container
+ <header >
+    <div class="header_container flex_center
                 main_width">
     <div class="logo"><img src="img\logo.png"></div>
-  <nav  class="main_nav">
+    <nav  class="main_nav">
         <a id="homenav" class="nav_link" href="comodo_main.html">HOME</a>
         <a id="aboutnav" class="nav_link" href="comodo_about.html">ABOUT</a>
         <a id="gallerynav" class="nav_link" href="comodo_gallery.html">GALLERY</a>
@@ -64,8 +64,40 @@
                 flex_center">
       JOIN US
     </div>
-     
+    <button class="nav_hide_btn"><i class="fas fa-bars"></i></button>
+  </div>
+  <div class="main_nav_black_container">
+     <nav  class="main_nav_black main_width">
+        <div class="main_nav_black_item"><a id="homenav" class="nav_link" href="comodo_main.html">HOME</a></div>
+        <hr>
+        <div class="main_nav_black_item"><a id="aboutnav" class="nav_link" href="comodo_about.html">ABOUT</a></div>
+         <hr>
+        <div class="main_nav_black_item"><a id="gallerynav" class="nav_link" href="comodo_gallery.html">GALLERY</a></div>
+         <hr>
+        <div class="pages_container flex_center main_nav_black_item"><a id="pagesnav" class="nav_link" href="">PAGES</a>
+          <div class="subnav_black">
+            
+            <div class="subnav_link"><a href="comodo_pricing.html">PRICING</a></div>
+            <hr>
+            <div class="subnav_link"><a href=" comodo_games.html">GAMES</a></div>
+            
+          </div>
+        </div>
+         <hr>
+        <div class="pages_container flex_center main_nav_black_item"><a id="blognav" class="nav_link" href="">BLOG</a>
+          <div class="subnav_black">
+            
+            <div class="subnav_link"><a href="comodo_blog.html">BLOG</a></div>
+            <hr>
+            <div class="subnav_link"><a href="comodo_blogdetails.html">BLOG DETAILS</a></div>
+            
+          </div>
+        </div>
+         <hr>
+        <div class="main_nav_black_item"><a id="contactnav" class="nav_link" href="comodo_contact.html">CONTACT</a></div>
+     </nav>
     </div>
+    
   </header>
    <div class="about flex_center">
     <p><a class="nav_link" href="comodo_main.html">Home <i class="fas fa-long-arrow-alt-right"></i></a>  <a class="nav_link" href="comodo_blogdetails.html">BLog details</a></p>
@@ -173,7 +205,7 @@
             <input type="text" name="name" placeholder="Enter your name">
             <input type="email" name="email" placeholder="Enter your email addres">
             <input type="txt" name="subject" placeholder="Subject">
-            <textarea type="text" name=" masage" placeholder="Masage"></textarea>
+            <textarea type="text" name="message" placeholder="Message"></textarea>
           </form>
           <div class="post_comment flex_center
                     btn_slide">Poste Comment</div>

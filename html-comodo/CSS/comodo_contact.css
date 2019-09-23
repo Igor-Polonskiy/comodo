@@ -59,6 +59,7 @@ textarea {
 	width: 200px;
 	height: 50px;
 	float: right;
+	cursor: pointer;
 }
 @media(max-width: 992px){
 	.contacts {

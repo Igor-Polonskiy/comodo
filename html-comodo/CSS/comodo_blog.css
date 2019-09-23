@@ -184,6 +184,9 @@
 .input_serch::placeholder {
 	color: white;
 }
+.input_serch:focus , .input_serch:active {
+	outline: none;
+}
 
 .serch_btn {
 	/*position: absolute;
@@ -530,7 +533,7 @@ input[name="email"] {
 input[name="subject"]{
 	width: 100%;
 }
-textarea[name=" masage"]{
+textarea[name="message"]{
 	width: 100%;
 	height: 150px;
 	padding-left: 20px;
