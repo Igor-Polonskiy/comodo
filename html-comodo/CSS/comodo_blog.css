@@ -319,6 +319,7 @@ transition: 0.3s;
 .subscribe_field {
 	width: 130px;
 	border: none;
+	outline: none;
 }
 .subscribe_field::placeholder {
 	color: lightgray;
