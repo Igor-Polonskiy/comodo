@@ -496,7 +496,7 @@ font-weight: 700;
 .galary_eye{
 	font-size: 40px;
 	position: absolute;
-	height: 100%;
+	height: calc(100% - 5px);
 	width: 100%;
 	left: 0;
 	top: 0;
