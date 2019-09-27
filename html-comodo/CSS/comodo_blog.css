@@ -135,11 +135,12 @@
 	width: 40px;
 	height: 40px;
 	background-color: white;
-
+	cursor: pointer;
 }
 .pagination_item_2 {
 	color: white;
 	background-color: #5ec9fd;
+
 }
 .pagination_item:hover {
 	transition: 0.3s;
@@ -180,12 +181,10 @@
 	box-sizing: border-box;
 	background-color: rgba(0,0,0,0);
 	color: white;
+	outline: none;
 }
 .input_serch::placeholder {
 	color: white;
-}
-.input_serch:focus , .input_serch:active {
-	outline: none;
 }
 
 .serch_btn {
@@ -199,6 +198,7 @@
 	height:50px;
 	*/
 	color: white;
+	cursor: pointer;
 }
 .aside hr {
 	width: 80%;
@@ -283,6 +283,7 @@
 	align-items: center;
 	width: 100%;
 	border-bottom: 1px dotted lightgray;
+	cursor: pointer;
 }
 .popular_posts_str a{
 	transition: 0.3s;
@@ -329,6 +330,7 @@ transition: 0.3s;
 	color: white;
 	font-size: 14px;
 	width: 120px;
+	cursor: pointer;
 }
 .tag_clouds {
 	margin-top: 25px;
@@ -400,6 +402,7 @@ transition: 0.3s;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+
 }
 .comment p,
 .comment h2{
@@ -414,6 +417,7 @@ transition: 0.3s;
 	background-repeat: no-repeat;
 	width: 60px;
 	height: 60px;
+	cursor: pointer;
 }
 .btn_post_img_1 {
 	margin-right: 25px;
@@ -490,6 +494,7 @@ transition: 0.3s;
 	font-weight:600;
 	font-size: 14px;
 	align-self: flex-start;
+	cursor: pointer;
 }
 .replay:hover {
 	background-color: #5ec9fd;
@@ -547,6 +552,7 @@ textarea[name="message"]{
 	font-size: 14px;
 	width: 150px;
 	height: 50px;
+	cursor: pointer;
 }
 @media(max-width: 1200px) and (min-width: 993px) {
 	.social_img {
