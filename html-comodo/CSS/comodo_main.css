@@ -911,7 +911,14 @@ background: linear-gradient(90deg, #271560, #402c8c, #271560);
 		font-size: 35px;
 		font-weight: 700;
 	}
-	
+	.screens_gallery,
+	.pricing_plans,
+	.subscribe,
+	.upcoming_games,
+	.about_us {
+		margin-top: 25px;
+	}
+	 
 	.about_us_img {
 		display: none;
 	}
@@ -946,6 +953,15 @@ background: linear-gradient(90deg, #271560, #402c8c, #271560);
 	}
 	.pacage_platinum {
 		display: none;
+	}
+	.funny_spancer {
+		margin-top: 25px;
+	}
+	.frequently_questions{
+		margin-top: 25px;
+	}
+	.block_posts{
+		margin-top: 25px;
 	}
 	.pacage {
 		width: 47%;
@@ -986,6 +1002,7 @@ background: linear-gradient(90deg, #271560, #402c8c, #271560);
 		
 		max-width: 500px;
 	}
+	
 	.about_us_description {
 		width: 540px;
 	}
