@@ -5,15 +5,35 @@ $('.nav_hide_btn').click(function(){
 }); 
 
  
-     $(".pagesnav, .mous").mouseover(function(){
+     $(".pagesnav").mouseover(function(e){
+
+        
+
         $(".subnav1").removeClass("nodisplay");
+        
+
+
     });
 
-   $(".mous").mouseout(function(){
-    setTimeout(function() {$(".subnav1").addClass("nodisplay")}, 300);
+   $(".pagesnav").mouseout(function(event){
+
+    var e = event.toElement || event.relatedTarget;
+    while(e.parentNode) {
+      if (e == $(".pagesnav")[0]) {
+        console.log('yep');
+        return;
+      }
+      e = e.parentNode;
+    }
+
+    setTimeout(function() {
+      $(".subnav1").addClass("nodisplay")
+    }, 300);
         ;
     });
+
     });
+
 	
 
 $(window).scroll(function(){
