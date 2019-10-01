@@ -113,7 +113,7 @@ body#contact a#contactnav {
 	animation: fadein  0.3s forwards linear;
 }
 .pages_container:hover .subnav_black{
-	display: block;
+	
 	animation: fadein  0.3s forwards linear;
 }
 .nodisplay{
@@ -137,10 +137,10 @@ body#contact a#contactnav {
 	color: black;
 }
 .subnav_black {
-	animation: fadein reverse 0.3s linear;
+	animation: fadeout  0.3s forwards linear;
 	transition: 3s;
 	opacity: 0;
-	display: none;
+
 	position: absolute;
 	left:80px;
 	top: -10px;
@@ -201,7 +201,7 @@ hr {
 	background: black;
 	cursor:pointer;
 }
-.nav_hide_btn:active, .nav_hide_btn:focus {
+.nav_hide_btn {
   outline: none;
 }
 .join_button {
