@@ -90,7 +90,13 @@ body#about a#aboutnav,
 body#gallery a#gallerynav,
 body#pages a#pagesnav,
 body#blog a#blognav,
-body#contact a#contactnav {
+body#contact a#contactnav,
+body#home a#homenav1,
+body#about a#aboutnav1,
+body#gallery a#gallerynav1,
+body#pages a#pagesnav1,
+body#blog a#blognav1,
+body#contact a#contactnav1 {
 	color: #5bc3f9;
 }
 .nav_link{
