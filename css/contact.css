@@ -68,6 +68,7 @@ textarea {
 	}
 	.enter_fields_container {
 	width: 100%;
+	}
 }
 @media(max-width: 767px){
 	.enter_fields_container {
