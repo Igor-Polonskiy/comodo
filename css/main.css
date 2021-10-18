@@ -266,6 +266,7 @@ hr {
     width: 100%;
     background-position: 50% 50%;
     background-size: cover;
+    background-color: rgb(48, 26, 113);
     background-image: url(../img/home-banner.JPG);
 }
 
