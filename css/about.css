@@ -1,23 +1,26 @@
 .about {
-	height: 330px;
-	background-size: cover;
-	background-position: 50% 60%;
-	background-image: url(../img/banner/home-banner.jpg);
-	color: white;
-	flex-direction: column;
+    height: 330px;
+    background-size: cover;
+    background-position: 50% 60%;
+    background-image: url(../img/home-banner.jpg);
+    color: white;
+    flex-direction: column;
 }
-.about a{
-	text-decoration: none;
-	color: white;
-	margin-right: 0;
-	margin-left: 0;
+
+.about a {
+    text-decoration: none;
+    color: white;
+    margin-right: 0;
+    margin-left: 0;
 }
-.about p{
-	margin: 0;
-	font-weight: 500;
-	font-size: 14px;
+
+.about p {
+    margin: 0;
+    font-weight: 500;
+    font-size: 14px;
 }
-.about h1{
-	font-weight: 700;
-	font-size: 38px;
+
+.about h1 {
+    font-weight: 700;
+    font-size: 38px;
 }
