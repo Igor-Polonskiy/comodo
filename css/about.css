@@ -2,6 +2,7 @@
     height: 330px;
     background-size: cover;
     background-position: 50% 60%;
+    background-color: rgb(48, 26, 113);
     background-image: url(../img/home-banner.jpg);
     color: white;
     flex-direction: column;
